@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+status.dat
+*.manifest
+*.spec
+
+# Database
+schema.sql.bak
+
+# Environments
+.env
+.venv
+pip-wheel-metadata/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

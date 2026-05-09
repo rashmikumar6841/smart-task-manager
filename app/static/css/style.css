@@ -1,0 +1,105 @@
+/* Custom Styles for Smart Task Manager */
+
+/* Root Variables for easy theming (fallback if JS fails) */
+:root {
+    --primary-color: #0d6efd;
+    --bg-color: #212529;
+    --text-color: #f8f9fa;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme Variables applied via data-bs-theme="light" */
+[data-bs-theme="light"] {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+[data-bs-theme="light"] .bg-dark {
+    background-color: #ffffff !important;
+}
+
+[data-bs-theme="light"] .bg-black {
+    background-color: #f1f3f5 !important;
+}
+
+[data-bs-theme="light"] .table-dark {
+    --bs-table-bg: #ffffff;
+    --bs-table-color: #212529;
+    --bs-table-border-color: #dee2e6;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+}
+
+[data-bs-theme="light"] .border-secondary {
+    border-color: #dee2e6 !important;
+}
+
+[data-bs-theme="light"] .text-light {
+    color: #212529 !important;
+}
+
+[data-bs-theme="light"] .form-control, 
+[data-bs-theme="light"] .form-select, 
+[data-bs-theme="light"] .input-group-text {
+    background-color: #ffffff !important;
+    border-color: #ced4da !important;
+    color: #495057 !important;
+}
+
+/* Card Enhancements */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:not(.hero-card):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* Status Badges */
+.badge-status-pending { background-color: #ffc107; color: #000; }
+.badge-status-progress { background-color: #0d6efd; color: #fff; }
+.badge-status-completed { background-color: #198754; color: #fff; }
+
+/* Priority Badges */
+.badge-priority-low { background-color: #6c757d; }
+.badge-priority-medium { background-color: #0dcaf0; color: #000; }
+.badge-priority-high { background-color: #dc3545; }
+
+/* Table styling */
+.table td {
+    vertical-align: middle;
+}
+
+/* Action buttons */
+.btn-action {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Smooth transitions for stats */
+.card-body h2 {
+    transition: color 0.3s ease;
+}
+
+/* Toast custom styling */
+.toast {
+    background-color: rgba(33, 37, 41, 0.95);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+[data-bs-theme="light"] .toast {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: black;
+    border: 1px solid rgba(0,0,0,0.1);
+}
