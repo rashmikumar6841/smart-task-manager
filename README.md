@@ -2,7 +2,7 @@
 
 A professional, full-stack, real-time task management platform built for modern workflows. This project showcases advanced integration of Python Flask, PostgreSQL, and real-time WebSockets.
 
-## ✨ Project Highlights (Internship Ready)
+## ✨ Project Highlights 
 
 - **📈 Advanced Data Analytics**: Utilizes **Pandas & NumPy** to compute task completion trends and priority distributions.
 - **📊 Interactive Visualizations**: Beautiful dashboard charts powered by **Chart.js** for at-a-glance productivity tracking.
